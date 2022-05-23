@@ -1,27 +1,23 @@
-# AngularModules
+## Platzi - Angular
+#### Rutas y Programación Modular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+Proyecto creado en colaboración con **Platzi** como contribuidor a su comunidad.
 
-## Development server
+[**Curso de Fundamentos de Angular:**](https://platzi.com/cursos/angular/)
+[Contribución](https://platzi-contributors.document360.io/docs/que-es-angular-y-como-aprenderlo)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[**Curso de Componentes y Servicios:**](https://platzi.com/cursos/angular-componentes/)
+[Contribución](https://platzi-contributors.document360.io/docs/todo-lo-que-aprenderas-sobre-componentes-y-servicios-en-angular)
 
-## Code scaffolding
+[**Curso de Consumo APIs Rest:**](https://platzi.com/cursos/angular-apis/)
+[Contribución]()
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[**Lazy Loading y Programación Modular:**](https://platzi.com/cursos/angular-modular/)
+[Contribución]()
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Start Project
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `npm install`
+- `ng serve`
