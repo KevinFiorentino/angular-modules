@@ -20,6 +20,10 @@ const routes: Routes = [
     component: CatalogoComponent
   },
   {
+    path: 'catalogo/:categoryId',
+    component: CatalogoComponent
+  },
+  {
     path: 'home',
     component: HomeComponent
   }
