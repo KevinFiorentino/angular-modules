@@ -19,9 +19,15 @@ export class CatalogoComponent implements OnInit {
 
     // Capturar parámetros de URL de forma Asíncrona
     this.route.paramMap
-      .subscribe(async (params: Params) => {
+      .subscribe((params: Params) => {
         const categoryId = params.get('categoryId');
         console.log(categoryId);
+      });
+
+    // Captura de parámetros opcionales
+    this.route.queryParams
+      .subscribe((params: Params) => {
+        console.log(params.category);
       });
   }
 
