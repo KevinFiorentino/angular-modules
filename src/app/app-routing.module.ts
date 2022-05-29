@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: NotFoundComponent      // 404
+    component: NotFoundComponent
   }
 ];
 

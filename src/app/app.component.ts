@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   template: '<router-outlet></router-outlet>',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-
-  constructor() {}
-
-}
+export class AppComponent { }
