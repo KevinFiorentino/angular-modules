@@ -1,32 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { AboutComponent } from './components/about/about.component';
-import { CatalogoComponent } from './components/catalogo/catalogo.component';
-import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    loadChildren: () => import('./modules/website/website.module').then(m => m.WebsiteModule)
   },
   {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'catalogo',
-    component: CatalogoComponent
-  },
-  {
-    path: 'catalogo/:categoryId',
-    component: CatalogoComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
+    path: 'cms',
+    loadChildren: () => import('./modules/cms/cms.module').then(m => m.CmsModule)
   },
   {
     path: '**',

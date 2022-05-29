@@ -4,25 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AboutComponent } from './components/about/about.component';
-import { CatalogoComponent } from './components/catalogo/catalogo.component';
-import { HomeComponent } from './components/home/home.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { CmsModule } from './modules/cms/cms.module';
+import { WebsiteModule } from './modules/website/website.module';
+
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CatalogoComponent,
-    AboutComponent,
-    HomeComponent,
-    NavBarComponent,
     NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CmsModule,
+    WebsiteModule,
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
