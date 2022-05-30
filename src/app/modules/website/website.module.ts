@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { QuicklinkModule } from 'ngx-quicklink'
 import { WebsiteRoutingModule } from './website-routing.module';
 
 import { AboutComponent } from './components/about/about.component';
@@ -18,6 +19,7 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     CommonModule,
+    QuicklinkModule,
     WebsiteRoutingModule
   ]
 })

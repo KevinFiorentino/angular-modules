@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { QuicklinkModule } from 'ngx-quicklink'
 import { SharedModule } from './modules/shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    QuicklinkModule,
     SharedModule,
   ],
   exports: [],

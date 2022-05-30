@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { CustomPreloadingStrategyService } from './modules/shared/services/custom-preloading-strategy.service';
+import { QuicklinkStrategy } from 'ngx-quicklink'
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     /* preloadingStrategy: PreloadAllModules, */
-    preloadingStrategy: CustomPreloadingStrategyService,
+    /* preloadingStrategy: CustomPreloadingStrategyService, */
+    preloadingStrategy: QuicklinkStrategy,
   })],
   exports: [RouterModule]
 })
