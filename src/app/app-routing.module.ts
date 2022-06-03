@@ -3,6 +3,7 @@ import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { CustomPreloadingStrategyService } from './modules/shared/services/custom-preloading-strategy.service';
 import { QuicklinkStrategy } from 'ngx-quicklink'
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AdminGuard } from './modules/shared/guards/admin.guard';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
   {
     path: 'cms',
     loadChildren: () => import('./modules/cms/cms.module').then(m => m.CmsModule),
+    canActivate: [ AdminGuard ],
     data: { preload: true },
   },
   {
